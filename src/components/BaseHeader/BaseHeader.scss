@@ -1,0 +1,12 @@
+.base-header {
+  z-index: 10;
+  padding: 10px;
+
+  &__container {
+    display: flex;
+  }
+
+  &__logo-block {
+    margin-right: 60px;
+  }
+}
