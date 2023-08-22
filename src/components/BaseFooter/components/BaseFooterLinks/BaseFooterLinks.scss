@@ -1,0 +1,12 @@
+.base-footer-links {
+  display: flex;
+  align-items: center;
+
+  &__link {
+    padding: 0 25px;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+  }
+}

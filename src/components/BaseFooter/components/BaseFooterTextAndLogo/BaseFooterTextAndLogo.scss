@@ -1,0 +1,14 @@
+.base-footer-text-and-logo {
+  display: flex;
+
+  &__logo {
+    margin-right: 50px;
+  }
+
+  &__text {
+    display: flex;
+    align-items: center;
+    color: #919090;
+    font-size: 12px;
+  }
+}

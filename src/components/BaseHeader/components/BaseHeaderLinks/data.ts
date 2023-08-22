@@ -8,21 +8,17 @@ export const headerLinks = [
   {
     name: 'Материалы',
     link: AppRoutes.Materials.path,
-
   },
   {
     name: 'Доставка и оплата',
     link: AppRoutes.Delivery.path,
-
   },
   {
     name: 'О компании',
     link: AppRoutes.AboutCompany.path,
-
   },
   {
     name: 'Контакты',
     link: AppRoutes.Contacts.path,
-
   },
-]
+];

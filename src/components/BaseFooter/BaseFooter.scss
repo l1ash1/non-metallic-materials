@@ -1,0 +1,9 @@
+.base-footer {
+  background-color: #424141;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    padding: 23px 0;
+  }
+}

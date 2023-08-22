@@ -2,6 +2,7 @@ import React from 'react';
 import { Outlet } from 'react-router-dom';
 
 import BaseHeader from 'components/BaseHeader';
+import BaseFooter from 'components/BaseFooter';
 
 import './Layout.scss';
 
@@ -11,7 +12,7 @@ const Layout: React.FC = () => {
       <main>
         <BaseHeader />
         <Outlet />
-        <div>footer</div>
+        <BaseFooter />
       </main>
     </div>
   );
