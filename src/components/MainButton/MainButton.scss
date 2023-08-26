@@ -10,5 +10,16 @@
     color: #ffffff;
     font-weight: 500;
     font-size: 22px;
+
+    &:active {
+      background-color: #26854b;
+      color: #e1e1e1;
+      font-size: 18px;
+    }
+
+    &:hover {
+      background-color: #26854b;
+      transition: 0.2s;
+    }
   }
 }

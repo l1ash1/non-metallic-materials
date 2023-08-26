@@ -9,9 +9,7 @@ interface Props {
 const MainButton = ({ text }: Props) => {
   return (
     <div className='main-button'>
-      <button className='main-button__button' onClick={() => alert('куку')}>
-        {text}
-      </button>
+      <button className='main-button__button'>{text}</button>
     </div>
   );
 };

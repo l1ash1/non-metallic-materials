@@ -24,8 +24,9 @@ const BaseFooterContacts: React.FC = () => {
   return (
     <div className='base-footer-contacts'>
       <div className='base-footer-contacts__soc-media'>
-        {footerContacts.map(({ link, imgSrc }) => (
+        {footerContacts.map(({ link, imgSrc }, index) => (
           <a
+            key={index}
             className='base-footer-contacts__soc-media__link'
             href={link}
             target='_blank'
