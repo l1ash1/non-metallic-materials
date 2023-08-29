@@ -2,7 +2,7 @@ import React from 'react';
 
 import Container from 'components/Container';
 import BaseFooterLinks from './components/BaseFooterLinks';
-import BaseFooterContact from './components/BaseFooterContact';
+import BaseFooterNumber from './components/BaseFooterNumber';
 import BaseFooterLogo from './components/BaseFooterLogo';
 import BaseFooterText from './components/BaseFooterText';
 import BaseFooterSocMediaLinks from './components/BaseFooterSocMediaLinks';
@@ -23,7 +23,7 @@ const BaseFooter: React.FC = () => {
               <BaseFooterText />
               <BaseFooterLinks />
               <BaseFooterSocMediaLinks />
-              <BaseFooterContact />
+              <BaseFooterNumber />
             </>
           ) : (
             <div className='base-footer__mobile'>
@@ -33,7 +33,7 @@ const BaseFooter: React.FC = () => {
               </div>
               <div className='base-footer__mobile__middle-container'>
                 <BaseFooterLinks />
-                <BaseFooterContact />
+                <BaseFooterNumber />
               </div>
               <div className='base-footer__mobile__bottom-container'>
                 <BaseFooterText />
