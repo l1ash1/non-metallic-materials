@@ -10,3 +10,14 @@
     font-weight: 400;
   }
 }
+
+@media (max-width: 1024px) {
+
+  .base-footer-links {
+
+    &__link {
+      padding: 0 15px;
+      font-size: 12px;
+    }
+  }
+}

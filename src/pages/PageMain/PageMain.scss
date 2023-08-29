@@ -1,4 +1,4 @@
-.main {
+.main-page {
 
   &__first-block {
     width: 100%;
@@ -25,6 +25,22 @@
       color: #ffffff;
       font-weight: 400;
       font-size: 20px;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .main-page {
+
+    &__first-block {
+
+      &__container {
+        padding-top: 200px;
+      }
+
+      &__title {
+        font-size: 45px;
+      }
     }
   }
 }

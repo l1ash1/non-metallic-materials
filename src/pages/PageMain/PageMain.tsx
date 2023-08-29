@@ -15,37 +15,37 @@ const introData = {
   qualities: [
     {
       iconSrc: iconTime,
-      name: 'Мы работаем с 2000 года',
+      text: 'Мы работаем с <span class="green">2000</span> года',
     },
     {
       iconSrc: iconHuman,
-      name: 'Более 5000 счастливых клиентов',
+      text: 'Более <span class="green">5000</span> </br> счастливых клиентов',
     },
     {
       iconSrc: iconCircle,
-      name: 'Лучшие цены',
+      text: 'Лучшие цены',
     },
     {
       iconSrc: iconStar,
-      name: 'Качественная продукция',
+      text: 'Качественная продукция',
     },
     {
       iconSrc: iconAlarm,
-      name: 'Оперативность',
+      text: 'Оперативность',
     },
   ],
 };
 
 const PageMain = () => {
   return (
-    <div className='main'>
-      <div className='main__first-block'>
+    <div className='main-page'>
+      <div className='main-page__first-block'>
         <Container>
-          <div className='main__first-block__container'>
-            <div className='main__first-block__title'>
+          <div className='main-page__first-block__container'>
+            <div className='main-page__first-block__title'>
               Продажа и доставка нерудных материалов
             </div>
-            <div className='main__first-block__text'>
+            <div className='main-page__first-block__text'>
               У нас вы можете заказать материалы премиального качества.
               Индивидуальный подход и качественная продукция – ключевые
               преимущества нашей компании.

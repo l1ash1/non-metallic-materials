@@ -2,19 +2,44 @@ import React from 'react';
 
 import Container from 'components/Container';
 import BaseFooterLinks from './components/BaseFooterLinks';
-import BaseFooterContacts from './components/BaseFooterContacts';
-import BaseFooterTextAndLogo from './components/BaseFooterTextAndLogo';
+import BaseFooterContact from './components/BaseFooterContact';
+import BaseFooterLogo from './components/BaseFooterLogo';
+import BaseFooterText from './components/BaseFooterText';
+import BaseFooterSocMediaLinks from './components/BaseFooterSocMediaLinks';
+import useBreakpoints from 'hooks/useBreakpoints';
 
 import './BaseFooter.scss';
 
 const BaseFooter: React.FC = () => {
+  const { isLg } = useBreakpoints();
+
   return (
     <div className='base-footer'>
       <Container>
         <div className='base-footer__container'>
-          <BaseFooterTextAndLogo />
-          <BaseFooterLinks />
-          <BaseFooterContacts />
+          {isLg ? (
+            <>
+              <BaseFooterLogo />
+              <BaseFooterText />
+              <BaseFooterLinks />
+              <BaseFooterSocMediaLinks />
+              <BaseFooterContact />
+            </>
+          ) : (
+            <div className='base-footer__mobile'>
+              <div className='base-footer__mobile__top-container'>
+                <BaseFooterLogo />
+                <BaseFooterSocMediaLinks />
+              </div>
+              <div className='base-footer__mobile__middle-container'>
+                <BaseFooterLinks />
+                <BaseFooterContact />
+              </div>
+              <div className='base-footer__mobile__bottom-container'>
+                <BaseFooterText />
+              </div>
+            </div>
+          )}
         </div>
       </Container>
     </div>
