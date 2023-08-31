@@ -2,39 +2,11 @@ import React from 'react';
 import Container from 'components/Container';
 import MainButton from 'components/MainButton';
 import BlockIntro from 'components/BlockIntro';
+import CatalogBlock from 'components/CatalogBlock';
+import AboutCompany from 'components/AboutCompany';
 
-import iconTime from 'assets/icons/intro-times-icon.svg';
-import iconHuman from 'assets/icons/intro-human-icon.svg';
-import iconCircle from 'assets/icons/intro-circle-icon.svg';
-import iconStar from 'assets/icons/intro-star-icon.svg';
-import iconAlarm from 'assets/icons/intro-alarm-icon.svg';
+import { introData, catalogData, aboutCompanyData } from './data';
 import './PageMain.scss';
-
-const introData = {
-  title: 'Почему выбирают нас',
-  qualities: [
-    {
-      iconSrc: iconTime,
-      text: 'Мы работаем с <span class="green">2000</span> года',
-    },
-    {
-      iconSrc: iconHuman,
-      text: 'Более <span class="green">5000</span> </br> счастливых клиентов',
-    },
-    {
-      iconSrc: iconCircle,
-      text: 'Лучшие цены',
-    },
-    {
-      iconSrc: iconStar,
-      text: 'Качественная продукция',
-    },
-    {
-      iconSrc: iconAlarm,
-      text: 'Оперативность',
-    },
-  ],
-};
 
 const PageMain = () => {
   return (
@@ -55,6 +27,11 @@ const PageMain = () => {
         </Container>
       </div>
       <BlockIntro title={introData.title} qualities={introData.qualities} />
+      <CatalogBlock title={catalogData.title} cards={catalogData.cards} />
+      <AboutCompany
+        textBlock={aboutCompanyData.textBlock}
+        numberBlock={aboutCompanyData.numberBlock}
+      />
     </div>
   );
 };
